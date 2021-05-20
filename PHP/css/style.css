@@ -1,0 +1,43 @@
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.scheda{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: calc(100% / 3);
+    background-color: blue;
+    border-radius: 5px ;
+    margin: 20px;
+}
+
+.scheda p img {
+    width: 60px;
+}
+
+.poster{
+    order: 1;
+}
+
+.title{
+    order: 2;
+}
+
+.author{
+    order: 3;
+}
+
+.year{
+    order: 4;
+}
+
+.genre{
+    order: 5;
+}
