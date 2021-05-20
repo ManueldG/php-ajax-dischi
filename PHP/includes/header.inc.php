@@ -12,6 +12,10 @@
 </head>
 <body>
 
+    <header>
+        <img src="../PHP/php-dischi/logo.png">
+    </header>
+    
     <div class="content">
 
    

@@ -1,8 +1,21 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    margin: 10px 10px;
+    background-color: lightgrey;
+
+}
+
+header img{
+    height:50px;
+    align-self: center;
+}
 
 .content{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -10,16 +23,17 @@
 .scheda{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    flex-basis: calc(100% / 3);
+    flex-basis: calc(100% / 4);
     background-color: blue;
     border-radius: 5px ;
     margin: 20px;
+    height: 400px;
 }
 
 .scheda p img {
-    width: 60px;
+    width: 150px;
 }
 
 .poster{
