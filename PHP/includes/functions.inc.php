@@ -28,4 +28,16 @@ function cors() {
     
 }
 
+//condizioni di filtraggio
+function filt($get){
+    
+    return (array_filter($get,function($v){
+        return $v;
+    }
+
+,ARRAY_FILTER_USE_BOTH) );
+
+
+}
+
 ?>

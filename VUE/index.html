@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
 <link rel="stylesheet" href="http://casaalmada.hostinggratis.it/doc/css/reset.css">
 <link rel="stylesheet" href="../PHP/css/style.css">
 
-
 <!-- VUE js -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="js/script.js"></script>
 
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title></title>
+<title>VUE</title>
 </head>
-<body onload="main()">
-    <header>
-        <img src="../PHP/php-dischi/logo.png">
-    </header>
+<body>
+    
 
     <div id="app">
+        <header>
+            <img src="../PHP/php-dischi/logo.png">
+        
+            <div class="entry">
+                <input type="text" v-model.trim="title" @keyup="getData" placeholder="Title">
+                <input type="text" v-model.trim="author" @keyup="getData" placeholder="Author">
+                <input type="number" v-model.trim="year" @keyup="getData" placeholder="Year">
+                <input type="text" v-model.trim="genre" @keyup="getData" placeholder="Genre">
+            </div>
+            
+        
+        </header>
         <div class="content">
             <div class="scheda" v-for=" el in list ">
                 <p><img :src="el.poster" alt=""></p>
@@ -31,7 +38,7 @@
             </div>
         </div>
     </div>
-
-    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
